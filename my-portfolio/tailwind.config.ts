@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+// import type { PluginAPI } from "tailwindcss/types/config";
 
 const config: Config = {
   content: [
@@ -12,6 +13,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      clipPath: {
+        'polygon': 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
+      }
     },
   },
   plugins: [],
