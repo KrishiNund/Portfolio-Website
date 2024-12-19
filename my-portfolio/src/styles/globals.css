@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 @tailwind utilities;
 
 :root {
-  --background: #F8F9FA;
+  --background: white;
   --foreground: #212529;
 }
 
@@ -36,4 +38,16 @@ body::-webkit-scrollbar {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.highlight {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  background-color: #dbeafe;
+  /* background: linear-gradient(120deg, rgba(255, 235, 59, 0.7) 0%, rgba(255, 235, 59, 0.7) 100%); */
+  padding: 0 5px;
+  border-radius: 5px; /* Adds some curves */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
