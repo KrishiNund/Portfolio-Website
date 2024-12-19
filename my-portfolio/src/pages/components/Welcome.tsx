@@ -2,7 +2,8 @@ import { Fade, Slide, Bounce } from "react-awesome-reveal";
 
 const Welcome = () => {
   return (
-    <div id="about" className="flex flex-col items-center h-screen w-screen border-black border-2 gap-y-6 md:gap-y-24">
+    <div id="about" className="flex flex-col items-center h-screen w-screen gap-y-6 md:gap-y-16">
+      <h2 className="text-3xl font-bold mt-8 highlight">About</h2>
       {/* Basic Introduction */}
       <div className="w-screen flex flex-col md:flex-row items-center text-lg md:text-xl justify-center">
         <div className="flex flex-col text-center md:text-justify leading-loose">

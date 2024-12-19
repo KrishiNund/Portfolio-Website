@@ -11,7 +11,7 @@ const Header = () => {
     }
 
     return(
-        <header className="border-gray-200 border-b-2 mb-12">
+        <header className="border-[#212529] border-b-2">
              <nav className="flex w-screen items-center justify-between p-6">
                 <a href="/">
                     <img src="logo.png" alt="logo" className="h-10 w-auto"/>
@@ -35,7 +35,7 @@ const Header = () => {
 
             {/* Mobile Dropdown Menu */}
             {isMenuOpen && (
-                <ul id="mobile-menu" className="flex-col items-center text-center border-gray-200 border-t-2 md:hidden">
+                <ul id="mobile-menu" className="flex-col items-center text-center border-[#212529] border-t-2 md:hidden">
                     <li><a href="#about" className="block py-2 font-semibold" onClick={toggleMobileMenu}>About</a></li>
                     <li><a href="#projects" className="block py-2 font-semibold" onClick={toggleMobileMenu}>Projects</a></li>
                     <li><a href="#skills" className="block py-2 font-semibold" onClick={toggleMobileMenu}>Skills</a></li>
