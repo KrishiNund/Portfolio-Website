@@ -12,8 +12,9 @@ const Projects = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows:false,
-    // autoplay:true,
-    // pauseOnHover:true,
+    autoplay:true,
+    autoplaySpeed: 10000,
+    pauseOnHover:true,
   };
 
   // Example projects data
