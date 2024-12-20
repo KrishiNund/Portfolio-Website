@@ -2,7 +2,7 @@ import { Fade, Slide, Bounce } from "react-awesome-reveal";
 
 const Welcome = () => {
   return (
-    <div id="about" className="flex flex-col items-center h-screen w-screen gap-y-6 md:gap-y-16">
+    <div id="about" className="flex flex-col items-center h-screen w-screen gap-y-6 md:gap-y-4">
       <h2 className="text-3xl font-bold mt-8 highlight">About</h2>
       {/* Basic Introduction */}
       <div className="w-screen flex flex-col md:flex-row items-center text-lg md:text-xl justify-center">
@@ -44,7 +44,7 @@ const Welcome = () => {
         </div>
       </div>
 
-      <div className="mt-24 md:mt-0">
+      <div className="mt-16 md:mt-20">
         <Bounce delay={9000} duration={2000} triggerOnce={true}>
           <i className="fa-solid fa-arrow-down text-2xl md:text-3xl"></i>
         </Bounce>
