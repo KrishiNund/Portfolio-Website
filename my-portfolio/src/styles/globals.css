@@ -51,3 +51,23 @@ body::-webkit-scrollbar {
   border-radius: 5px; /* Adds some curves */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
+
+.slick-dots {
+  bottom: -50px !important; /* Position closer to the slides */
+}
+
+.slick-dots li button:before {
+  color: gray; /* Customize dot color */
+  font-size: 12px; /* Adjust size */
+}
+
+.slick-dots li.slick-active button:before {
+  color: blue; /* Highlight active dot */
+}
+
+/* Adjust for mobile */
+@media (max-width: 768px) {
+  .slick-dots {
+    bottom: -50px !important; /* Closer on smaller screens */
+  }
+}
