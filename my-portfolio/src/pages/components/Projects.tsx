@@ -8,12 +8,12 @@ const Projects = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows:false,
+    arrows:true,
     autoplay:true,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 8000,
     pauseOnHover:true,
   };
 
@@ -80,42 +80,56 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="p-6 w-screen h-screen">
-      <h2 className="text-3xl font-bold mb-8 highlight">Projects</h2>
+    <section id="projects" className="px-6 min-h-screen">
+      <div className="bg-gray-200 h-16 w-1 rounded-full dark:bg-opacity-50 mr-auto ml-auto" style={{opacity: 1, transform: "none", marginTop:-40}}></div>
+      <div className="max-w-6xl mx-auto text-center">
+        {/* Title */}
+        <h2 className="text-4xl font-bold highlight text-gray-800 mb-8 mt-10">
+          Projects
+        </h2>
 
-      {/* Slick Slider */}
-      <Slider {...settings}>
-        {projects.map((project) => (
-          <div key={project.id} className="p-4 mb-10">
-            {/* Project GIF */}
-            <div className="relative">
-              <img
-                src={project.gif}
-                alt={project.title}
-                className="md:w-2/5 md:h-96 w-full h-96 object-contain mr-auto ml-auto bg-white"
-              />
-            </div>
+        {/* Carousel */}
+        <Slider {...settings}>
+          {projects.map((project) => (
+            <div key={project.id} className="flex flex-col items-center px-6">
+              {/* Project Media */}
+              <div className="relative w-fit rounded-lg overflow-hidden shadow-lg mr-auto ml-auto">
+                <img
+                  src={project.gif}
+                  alt={project.title}
+                  className="lg:w-full lg:h-96 w-fit object-contain mr-auto ml-auto bg-white"
+                />
+              </div>
 
-            {/* Project Description */}
-            <div className="mt-4 text-center">
-              <h3 className="text-2xl font-semibold">{project.title}</h3>
-              <p className="mt-2 text-gray-700 md:w-2/5 leading-relaxed text-center mr-auto ml-auto">{project.description}</p>
-              {/* Technologies */}
-              <div className="flex flex-wrap justify-center mt-4 gap-2">
-                {project.tech.map((tech, index) => (
-                  <span
-                    key={index}
-                    className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-md"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              {/* Project Details */}
+              <div className="mt-6 max-w-3xl text-center mr-auto ml-auto">
+                {/* Title */}
+                <h3 className="text-2xl font-semibold text-gray-800">
+                  {project.title}
+                </h3>
+
+                {/* Description */}
+                <p className="mt-4 text-gray-700 leading-relaxed px-4">
+                  {project.description}
+                </p>
+
+                {/* Technologies */}
+                <div className="flex flex-wrap justify-center gap-2 mt-6">
+                  {project.tech.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
   );
 };
 
