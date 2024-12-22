@@ -1,4 +1,4 @@
-import { Fade, Slide, Bounce } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Welcome = () => {
   return (
@@ -27,20 +27,22 @@ const Welcome = () => {
           {/* Buttons */}
           <div className="flex justify-center md:justify-start gap-4 mt-6">
             <a
-              href="https://github.com/"
+              href="https://github.com/KrishiNund"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-900 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-600 transition duration-300"
+              className="flex items-center space-x-2 bg-gray-900 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-600 transition duration-300"
             >
-              GitHub
+              <i className="fa-brands fa-github"></i>
+              <p>Github</p>
             </a>
             <a
               href="https://linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-gray-900 transition duration-300"
+              className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-gray-900 transition duration-300"
             >
-              LinkedIn
+              <i className="fa-brands fa-linkedin"></i>
+              <p>LinkedIn</p>
             </a>
           </div>
         </div>
@@ -49,7 +51,7 @@ const Welcome = () => {
         <div className="relative w-3/4 md:w-1/3 max-w-sm clip-polygon overflow-hidden shadow-lg">
           <Slide direction="right" delay={500} duration={1500} triggerOnce={true}>
             <img
-              src="programmer.png"
+              src="developer.png"
               alt="programmer illustration"
               className="w-full h-auto object-cover"
             />
