@@ -11,18 +11,17 @@ const Header = () => {
     }
 
     return(
-        <header className="sticky top-0 z-50 bg-white shadow-lg">
+        <header className="sticky top-0 z-50 bg-[#F8F9FA] shadow-lg">
              <nav className="flex w-screen items-center justify-between p-6">
                 <a href="/" className="flex items-center space-x-12">
                     <img src="logo.png" alt="logo" className="h-10 w-auto"/>
-                    {/* <span className="md:hidden  text-xl font-bold text-gray-900">My Portfolio</span> */}
                 </a>
 
                 {/* Desktop navigation bar */}
                 <div className="hidden md:flex w-screen items-center justify-evenly">
-                    <a href="#about" className="text-lg font-semibold leading-6 text-gray-900 hover:underline underline-offset-2 hover:text-gray-600">About</a>
-                    <a href="#projects" className="text-lg font-semibold leading-6 text-gray-900 hover:underline underline-offset-2 hover:text-gray-600">Projects</a>
-                    <a href="#skills" className="text-lg font-semibold leading-6 text-gray-900 hover:underline underline-offset-2 hover:text-gray-600">Skills</a>
+                    <a href="#about" className="text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600">About</a>
+                    <a href="#projects" className="text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600">Projects</a>
+                    <a href="#skills" className="text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600">Skills</a>
                 </div>
 
                 {/* Hamburger Menu for Mobile */}
@@ -43,7 +42,7 @@ const Header = () => {
 
             {/* Mobile Dropdown Menu */}
             {isMenuOpen && (
-                <ul id="mobile-menu" className="flex flex-col items-center space-y-4 py-4 bg-white shadow-md md:hidden">
+                <ul id="mobile-menu" className="flex flex-col items-center space-y-4 py-4 bg-[#F8F9FA] shadow-md md:hidden">
                     <li><a href="#about" className="text-lg block py-2 font-semibold text-gray-700" onClick={toggleMobileMenu}>About</a></li>
                     <li><a href="#projects" className="text-lg block py-2 font-semibold text-gray-700" onClick={toggleMobileMenu}>Projects</a></li>
                     <li><a href="#skills" className="text-lg block py-2 font-semibold text-gray-700" onClick={toggleMobileMenu}>Skills</a></li>
