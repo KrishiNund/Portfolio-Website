@@ -27,10 +27,10 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-12 px-6">
-        <div className="bg-gray-200 hidden xl:block h-16 w-1 rounded-full dark:bg-opacity-50 mr-auto ml-auto" style={{opacity: 1, transform: "none", marginTop:-60}}></div>
+        <div className="bg-transparent hidden xl:block h-16 w-1 rounded-full dark:bg-opacity-50 mr-auto ml-auto" style={{opacity: 1, transform: "none", marginTop:-30}}></div>
         <div className="max-w-6xl mx-auto">
             {/* Section Title */}
-            <h2 className="text-4xl font-bold text-center highlight text-gray-800 mb-8 mt-12">
+            <h2 className="text-4xl font-bold text-center highlight text-gray-800 mb-8 mt-12 lg:mt-12 xl:mt-8">
             Skills
             </h2>
 
@@ -40,7 +40,7 @@ const Skills = () => {
                 {skills.map((skill) => (
                 <div
                     key={skill.title}
-                    className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg hover:shadow-xl transition-transform transform hover:scale-105"
+                    className="flex flex-col items-center p-4 bg-[#F8F9FA] shadow-lg rounded-lg hover:shadow-xl transition-transform transform hover:scale-105"
                 >
                     <Zoom triggerOnce>
                     <img
