@@ -1,4 +1,4 @@
-"use client";
+import Link from 'next/link';
 
 import {useState} from 'react';
 
@@ -12,10 +12,12 @@ const Header = () => {
 
     return(
         <header className="sticky top-0 z-50 bg-[#F8F9FA] shadow-lg">
-             <nav className="flex w-screen items-center justify-between p-6">
-                <a href="/" className="flex items-center space-x-12">
-                    <img src="logo.png" alt="logo" className="h-10 w-auto"/>
-                </a>
+                <nav className="flex w-screen items-center justify-between p-6">
+                <Link legacyBehavior href="/">
+                    <a className="flex items-center space-x-12">
+                        <img src="logo.png" alt="logo" className="h-10 w-auto" />
+                    </a>
+                </Link>
 
                 {/* Desktop navigation bar */}
                 <div className="hidden md:flex w-screen items-center justify-evenly">

@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return(
     <>
       <Head>
-        <title>Krishi's Portfolio</title>
+        <title>Krishi&apos;s Portfolio</title>
       </Head>
       <Script src="https://kit.fontawesome.com/df395f211e.js" crossOrigin="anonymous"></Script>
       <Component {...pageProps} />
