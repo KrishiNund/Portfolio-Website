@@ -38,7 +38,7 @@ const Welcome = () => {
               </a>
               <a
                 href="Resume - Omkaar Krishi Nund.pdf"
-                download="KN_Resume.pdf"
+                download="KrishiNund-Resume.pdf"
                 className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-400 transition duration-300"
               >
                 <i className="fa-solid fa-file-arrow-down"></i>
