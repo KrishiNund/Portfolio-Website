@@ -40,7 +40,7 @@ const Projects = () => {
       title: "Portfolio website",
       description: "A simple portfolio website made using Next.js and Tailwind CSS to showcase my projects and skills acquired during my course.",
       gif: "portfolio.webp",
-      tech: ["TypeScript", "Next.js", "TailwindCSS"],
+      tech: ["Next.js", "TailwindCSS", "Netlify"],
       github:"https://github.com/KrishiNund/Portfolio-Website"
     },
     {

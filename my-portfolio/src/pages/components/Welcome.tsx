@@ -81,6 +81,9 @@ const Welcome = () => {
               <p className="text-lg md:text-xl text-gray-700">
                 I love creating <span className="font-bold text-blue-600">modern, responsive, and beautiful websites</span>.
               </p>
+              <p className="text-lg md:text-xl text-gray-700">
+                I&apos;m also keen to learn about <span className="font-bold text-blue-600">new technologies</span> and embrace new challenges.
+              </p>
             </Fade>
           </div>
         </div>
